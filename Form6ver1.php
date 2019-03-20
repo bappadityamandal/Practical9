@@ -25,9 +25,10 @@ class NameForm extends React.Component {
 
   handleChange(event) {
 	  this.setState({value: event.target.value});
-	  //this.setState({value: event.target.value.toLowerCase()});
+	  this.setState({value: event.target.value.toLowerCase()});
 		var textval = this.state.value;
 		//user validation of the special characters
+		/*
 		var iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?";		
 		for (var i = 0; i < textval.length; i++) {
 			if (iChars.indexOf(textval.charAt(i)) != -1) {
@@ -35,6 +36,7 @@ class NameForm extends React.Component {
 				//return false;
 			}
 		}
+		*/
   }
   
   handleChange2(event) {
